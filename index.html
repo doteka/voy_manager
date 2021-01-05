@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="kr">
     <meta charset="utf-8">
-    <title>sasd</title>
+    <title>교내행사 도우미</title>
     <link href="calendar_icon.png" rel="shortcut icon" type="image/x-icon" >
     <script src="jquery.js" ></script>
 
@@ -115,6 +115,18 @@
         .date_Calendar {
             font-family: KyoboHand;
             font-size: 120%;
+        }
+        .g {
+          color: red;
+        }
+        .w {
+            color: blue;
+        }
+        .n {
+            color: yellow;
+        }
+        .u {
+            color: rgb(194,181, 157);
         }
     </style>
 
@@ -303,6 +315,7 @@
                 }
                 document.getElementById("toDay_Date").innerText = print_Date(today);
                 document.getElementById("toDay_Event").innerText = event_Name;
+
             });
 
 
@@ -488,14 +501,15 @@
     </script>
 
     <body>
-        <a id="target_School" style="font-family: KyoboHand; color: plum; font-size: 35px;">고등학교</a>
+        <!--대상 학교 이름-->
+        <a id="target_School" style="font-family: KyoboHand; color: plum; font-size: 35px; font-weight: bold">고등학교</a>
         <div class="Notifi" style="margin-top: 20px;">
             <!--오늘 일정-->
             <div style="float: left; margin-right: 150px;">
                 <table border="0" style="color: salmon;">
 
                     <caption class="event_Notifi_Caption" id="toDay_Date">toDay_Date</caption>
-                    <td class="event_Notifi" id="toDay_Event">toDay_EVENT</td>
+                    <td class="event_Notifi" id="toDay_Event" >toDay_EVENT</td>
                 </table>
             </div>
 
@@ -554,11 +568,11 @@
                 <br>
                 <a style="color: midnightblue">Jeong D Y</a>
                 <br>
-                <a style="color: red">G</a><a style="color: blue">W</a><a style="color: yellow">N</a><a style="color: rgb(194,181, 157)">U</a>
+                <a class="g">G</a><a class="w">W</a><a class="n">N</a><a class="u">U</a>
                 <a style="color: lightskyblue">과학기술대학교 10대 학생회</a>
                 <a style="color: deepskyblue">아우름</a>
                 <br>
-                <a style="color: red">G</a><a style="color: blue">W</a><a style="color: yellow">N</a><a style="color: rgb(194,181, 157)">U</a>
+                <a class="g">G</a><a class="w">W</a><a class="n">N</a><a class="u">U</a>
                 <a style="color: darkgray;">2020 2학기 기말고사</a>
             </div>
 
@@ -622,11 +636,11 @@
                         <br>
                         <a style="color: midnightblue">Jeong D Y</a>
                         <br>
-                        <a style="color: red">G</a><a style="color: blue">W</a><a style="color: yellow">N</a><a style="color: rgb(194,181, 157)">U</a>
+                        <a class="g">G</a><a class="w">W</a><a class="n">N</a><a class="u">U</a>
                         <a style="color: lightskyblue">과학기술대학교 10대 학생회</a>
                         <a style="color: deepskyblue">아우름</a>
                         <br>
-                        <a style="color: red">G</a><a style="color: blue">W</a><a style="color: yellow">N</a><a style="color: rgb(194,181, 157)">U</a>
+                        <a class="g">G</a><a class="w">W</a><a class="n">N</a><a class="u">U</a>
                         <a style="color: darkgray;">2020 2학기 기말고사</a>
                         <br>
                         <br>
